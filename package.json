@@ -1,6 +1,6 @@
 {
   "name": "is-path-global",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check if a path is in PATH",
   "license": "MIT",
   "repository": "kevva/is-path-global",
