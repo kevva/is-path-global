@@ -1,7 +1,7 @@
 'use strict';
 
-var isPathGlobal = require('./');
 var test = require('ava');
+var isPathGlobal = require('./');
 
 test('check if a path is in PATH', function (t) {
 	t.assert(isPathGlobal('/bin/sh'));

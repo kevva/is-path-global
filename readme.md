@@ -2,11 +2,13 @@
 
 > Check if a path is in PATH
 
+
 ## Install
 
-```sh
+```
 $ npm install --save is-path-global
 ```
+
 
 ## Usage
 
@@ -19,6 +21,7 @@ isPathGlobal('/bin/sh');
 isPathGlobal('/home/sirjohndoe');
 //=> false
 ```
+
 
 ## License
 
