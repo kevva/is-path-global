@@ -1,4 +1,4 @@
-# is-path-global [![Build Status](http://img.shields.io/travis/kevva/is-path-global.svg?style=flat)](https://travis-ci.org/kevva/is-path-global)
+# is-path-global [![Build Status](https://travis-ci.org/kevva/is-path-global.svg?branch=master)](https://travis-ci.org/kevva/is-path-global)
 
 > Check if a path is in PATH
 
