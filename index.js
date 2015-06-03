@@ -1,5 +1,4 @@
 'use strict';
-
 var delimiter = require('path').delimiter;
 var isPathInside = require('is-path-inside');
 
