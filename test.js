@@ -1,10 +1,12 @@
-'use strict';
-var test = require('ava');
-var isPathGlobal = require('./');
+import test from 'ava';
+import m from './';
 
-test('check if a path is in PATH', function (t) {
-	t.assert(isPathGlobal('/bin/sh'), isPathGlobal('/bin/sh'));
-	t.assert(isPathGlobal('/usr/bin'), isPathGlobal('/usr/bin'));
-	t.assert(!isPathGlobal(__filename), isPathGlobal(__filename));
-	t.end();
+test('check if a path is in PATH', t => {
+	t.true(m('/bin/sh'));
+	t.true(m('/usr/bin'));
+	t.false(m(__filename));
+});
+
+test('accepts a string', t => {
+	t.throws(m.bind(null, 0), 'Expected a `string`, got `number`');
 });

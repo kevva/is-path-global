@@ -1,13 +1,11 @@
 'use strict';
-var delimiter = require('path').delimiter;
-var isPathInside = require('is-path-inside');
+const path = require('path');
+const isPathInside = require('is-path-inside');
 
-module.exports = function (str) {
+module.exports = str => {
 	if (typeof str !== 'string') {
-		throw new TypeError('Expected a string');
+		throw new TypeError(`Expected a \`string\`, got \`${typeof str}\``);
 	}
 
-	return process.env.PATH.split(delimiter).some(function (path) {
-		return isPathInside(str, path) || str === path;
-	});
+	return process.env.PATH.split(path.delimiter).some(pth => isPathInside(str, pth) || str === pth);
 };

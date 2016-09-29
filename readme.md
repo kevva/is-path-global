@@ -13,7 +13,7 @@ $ npm install --save is-path-global
 ## Usage
 
 ```js
-var isPathGlobal = require('is-path-global');
+const isPathGlobal = require('is-path-global');
 
 isPathGlobal('/bin/sh');
 //=> true
